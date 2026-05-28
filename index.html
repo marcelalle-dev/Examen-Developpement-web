@@ -47,54 +47,62 @@
     </div>
   </div>
 
-  <div class="article-section">
-    <div class="article-inner">
-      <aside class="article-aside">
-        <span class="article-tag">Cours</span>
-        <h3 class="section-title">Question<br />de Cours</h3>
-        <div class="article-meta">
-          <div class="meta-item">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round">
-              <rect x="3" y="4" width="18" height="18" rx="2"/>
-              <path d="M16 2v4M8 2v4M3 10h18"/>
-            </svg>
-            Semestre 1 - 2026
-          </div>
-          <div class="meta-item">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M12 6v6l4 2"/>
-            </svg>
-            Durée : 2h
-          </div>
-          <div class="meta-item">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-            Module : HTML/CSS
-          </div>
-        </div>
-      </aside>
-
-      <div class="article-content">
-        <div class="question-block">
-          <strong>Question</strong>
-          <p>Qu'est-ce que le développement web ? Expliquez la différence entre le HTML, le CSS et le JavaScript, en donnant un exemple concret du rôle de chacun dans la création d'une page web.</p>
-        </div>
-
-        <div class="answer-block">
-          <h4>Éléments de réponse attendus</h4>
-          <p>
-            Le développement web désigne l'ensemble des activités liées à la création et à la maintenance de sites et d'applications accessibles via un navigateur internet. Il repose sur trois technologies fondamentales complémentaires :
-          </p>
-          <ul>
-            <li><strong>HTML </strong> - structure et contenu de la page (titres, paragraphes, images, liens). C'est le squelette du site.</li>
-            <li><strong>CSS </strong> - présentation visuelle (couleurs, polices, mise en page). C'est l'habillage du site.</li>
-          </ul>
-             </div>
+  <div class="questions-section">
+    <div class="section">
+      <p class="section-label">Ressources Pédagogiques</p>
+      <h2 class="section-title">Questions de Cours<br />HTML & CSS</h2>
+      
+      <div class="questions-table-wrapper">
+        <table class="questions-table">
+          <thead>
+            <tr>
+              <th>Questions</th>
+              <th>Réponses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Donner la structure de base d'un document HTML5.</strong></td>
+              <td>La structure de base est :<br/><code>&lt;!DOCTYPE html&gt;<br/>&lt;html lang="fr"&gt;<br/>  &lt;head&gt;<br/>    &lt;meta charset="UTF-8"&gt;<br/>    &lt;title&gt;Titre&lt;/title&gt;<br/>  &lt;/head&gt;<br/>  &lt;body&gt;<br/>    &lt;!-- Contenu --&gt;<br/>  &lt;/body&gt;<br/>&lt;/html&gt;</code></td>
+            </tr>
+            <tr>
+              <td><strong>2. À quoi sert la propriété CSS display: flex ?</strong></td>
+              <td>display: flex active le modèle Flexbox sur un conteneur. Il permet de :<br/>• Aligner les éléments enfants horizontalement ou verticalement<br/>• Distribuer l'espace entre les éléments<br/>• Créer des mises en page souples sans recourir aux float</td>
+            </tr>
+            <tr>
+              <td><strong>3. Citez deux balises HTML utilisées dans les formulaires.</strong></td>
+              <td>• <code>&lt;input&gt;</code> : permet de créer des champs de saisie (texte, mot de passe, case à cocher, etc.)<br/>• <code>&lt;button&gt;</code> : crée un bouton cliquable (soumission, réinitialisation, etc.)<br/>Autres exemples : <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;label&gt;</code></td>
+            </tr>
+            <tr>
+              <td><strong>4. Que produit le code suivant : <code>&lt;h1 style="color:red"&gt;Bienvenue&lt;/h1&gt;</code></strong></td>
+              <td>Ce code affiche le texte « Bienvenue » en rouge, mis en forme comme un titre de niveau 1 (grand et gras par défaut). L'attribut style applique directement la propriété CSS color:red en ligne (inline style).</td>
+            </tr>
+            <tr>
+              <td><strong>5. Expliquez la différence entre id et class.</strong></td>
+              <td><strong>id :</strong> identifiant unique dans la page. Un seul élément peut avoir un id donné. En CSS : #monId<br/><strong>class :</strong> peut être partagée par plusieurs éléments. En CSS : .maClasse</td>
+            </tr>
+            <tr>
+              <td><strong>6. Quelle propriété CSS permet de : a) changer la couleur du texte ? b) changer la couleur de fond ?</strong></td>
+              <td>a) <code>color</code> : change la couleur du texte<br/>b) <code>background-color</code> : change la couleur de fond</td>
+            </tr>
+            <tr>
+              <td><strong>7. À quoi sert l'attribut href dans une balise &lt;a&gt; ?</strong></td>
+              <td>L'attribut href (Hypertext REFerence) indique la destination du lien. Il peut contenir :<br/>• Une URL absolue : https://www.exemple.com<br/>• Une URL relative : page2.html<br/>• Une ancre : #section1<br/>• Un email : mailto:contact@exemple.com</td>
+            </tr>
+            <tr>
+              <td><strong>8. Quelle est la différence entre une balise bloc (block) et une balise en ligne (inline) ?</strong></td>
+              <td><strong>Bloc (block) :</strong> occupe toute la largeur disponible et commence sur une nouvelle ligne. Exemples : <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code><br/><strong>Inline :</strong> n'occupe que l'espace nécessaire et reste dans le flux du texte. Exemples : <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code></td>
+            </tr>
+            <tr>
+              <td><strong>9. Quel est le rôle des balises : &lt;html&gt;, &lt;head&gt;, &lt;body&gt; ?</strong></td>
+              <td><code>&lt;html&gt;</code> : élément racine qui englobe tout le document HTML<br/><code>&lt;head&gt;</code> : contient les métadonnées (titre, encodage, liens CSS, scripts)<br/><code>&lt;body&gt;</code> : contient tout le contenu visible de la page</td>
+            </tr>
+            <tr>
+              <td><strong>10. Définissez les termes : HTML et CSS</strong></td>
+              <td><strong>HTML :</strong> HyperText Markup Language - langage de balisage utilisé pour structurer le contenu d'une page web<br/><strong>CSS :</strong> Cascading Style Sheets - langage de feuilles de style utilisé pour mettre en forme et présenter visuellement les éléments HTML</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

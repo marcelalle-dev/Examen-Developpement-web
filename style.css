@@ -499,6 +499,89 @@
 
     .footer-bottom a:hover { color: white; }
 
+    /* ─── QUESTIONS TABLE ─────────────────────────────────── */
+    .questions-section {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .questions-section .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .questions-table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-top: 2rem;
+    }
+
+    .questions-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .questions-table thead {
+      background: linear-gradient(135deg, var(--primary) 0%, #1565a0 100%);
+      color: white;
+    }
+
+    .questions-table thead th {
+      padding: 1rem 1.5rem;
+      text-align: left;
+      font-weight: 600;
+      font-family: 'Syne', sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    .questions-table tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background-color 0.2s;
+    }
+
+    .questions-table tbody tr:hover {
+      background-color: #f9f7f4;
+    }
+
+    .questions-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .questions-table td {
+      padding: 1.25rem 1.5rem;
+      vertical-align: top;
+      line-height: 1.8;
+    }
+
+    .questions-table td:first-child {
+      width: 30%;
+      font-weight: 500;
+      color: var(--primary);
+    }
+
+    .questions-table td:last-child {
+      width: 70%;
+      color: var(--muted);
+    }
+
+    .questions-table code {
+      background: #f3f2f0;
+      color: var(--primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+
+    .questions-table strong {
+      color: var(--dark);
+      font-weight: 600;
+    }
+
     /* ─── RESPONSIVE ──────────────────────────────────────── */
     @media (max-width: 768px) {
       .presentation-grid,
@@ -508,5 +591,24 @@
       .footer-links { gap: 2rem; }
       .gallery-grid { flex-direction: column; }
       nav a { padding: 6px 10px; font-size: 0.82rem; }
+
+      .questions-table td:first-child {
+        width: 40%;
+        font-size: 0.85rem;
+      }
+
+      .questions-table td:last-child {
+        width: 60%;
+        font-size: 0.85rem;
+      }
+
+      .questions-table td {
+        padding: 1rem;
+      }
+
+      .questions-table thead th {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+      }
     }
   
